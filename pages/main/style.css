@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  font-family: "Roboto";
+}
+
+header {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 1600px;
+  height: 80px;
+  background-color: #000000;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+}
+
+nav ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+main {
+  width: 1600px;
+}
+
+nav,
+section,
+footer {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.logo {
+  position: relative;
+  width: 82px;
+  height: 52px;
+  font-size: 12px;
+}
+
+.logo img {
+  position: relative;
+  bottom: 50px;
+}
+
+.watch-online {
+  background-image: url("../../assets/images/giant-panda.png");
+  width: 1600px;
+  height: 755px;
+}
+
+.watch-online button {
+  position: relative;
+  left: 185px;
+  bottom: 22px;
+  width: 290px;
+  height: 54px;
+  border-radius: 25px;
+  color: #f9804b;
+}
+
+.round-with-text {
+  position: relative;
+  top: 85px;
+  left: 780px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: #f9804b;
+}
+
+.round-with-text h2 {
+  width: 500.31px;
+  height: 400px;
+  margin: 0;
+  padding: 80px;
+  left: 880px;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 75%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.round-with-text span {
+  color: #ffee2e;
+}
+
+.how-it-works-main-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 140px;
+}
+
+.how-it-works_text {
+    margin-left: 89px;
+}
+
+.how-it-works_text h2{
+    font-size: 48px;
+}
+
+.how-it-works_img-bamboo-cap {
+    width: 609px;
+    height: 403px;
+}
+
+.how-it-works_img-flowers {
+    position: absolute;
+    top: 805px;
+    right: 0;
+}
+
+.choose-your-favorite ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 180px;
+}
