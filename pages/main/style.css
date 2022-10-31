@@ -95,3 +95,34 @@ footer {
 .round-with-text span {
   color: #ffee2e;
 }
+
+.how-it-works-main-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 140px;
+}
+
+.how-it-works_text {
+    margin-left: 89px;
+}
+
+.how-it-works_text h2{
+    font-size: 48px;
+}
+
+.how-it-works_img-bamboo-cap {
+    width: 609px;
+    height: 403px;
+}
+
+.how-it-works_img-flowers {
+    position: absolute;
+    top: 805px;
+    right: 0;
+}
+
+.choose-your-favorite ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 180px;
+}
