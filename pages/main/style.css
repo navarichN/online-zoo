@@ -13,18 +13,28 @@ a {
     text-decoration: none;
 }
 
-header {
-  position: absolute;
+header, footer {
   display: flex;
   flex-direction: row;
   width: 1600px;
-  height: 80px;
   background-color: #000000;
 }
 
-nav {
+header {
+  position: absolute;
+  height: 80px;
+}
+
+nav span {
+  position: relative;
+  color: #FFFFFF;
+  right: 0;
+}
+
+nav, footer nav {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
 }
 
 nav ul {
@@ -37,11 +47,10 @@ nav ul {
   padding-top: 30px;
 }
 
-nav ul li {
+nav ul li, footer nav{
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
-  list-style-type: none;
 }
 
 nav ul li a {
@@ -60,7 +69,7 @@ main {
 
 nav,
 section,
-footer {
+.footer_content {
   margin: 0 auto;
   width: 1160px;
 }
@@ -70,16 +79,16 @@ footer {
   width: 82px;
   height: 52px;
   font-size: 10px;
-  border: 1px solid #FFFFFF;
 }
 
 .logo a {
 
 }
 
-.logo img {
+.logo a img {
   position: relative;
-  bottom: 50px;
+  bottom: 43px;
+  left: 5px;
 }
 
 h1 {
@@ -88,7 +97,8 @@ h1 {
     line-height: 120%;
     color: #FFFFFF;
     text-align: center;
-    padding: 0;
+    padding: 4px;
+    border: 1px solid #FFFFFF;
 }
 
 .watch-online {
@@ -97,13 +107,26 @@ h1 {
   height: 755px;
 }
 
-.watch-online button {
+.watch-online button,
+.choose-your-favorite button,
+.feed-a-friend_wrapper button {
   position: relative;
-  left: 185px;
-  bottom: 22px;
   width: 290px;
   height: 54px;
   border-radius: 25px;
+  background-color: #f9804b;
+  color: #FFFFFF;
+}
+
+.watch-online button {
+  left: 185px;
+  bottom: 22px;
+}
+
+.watch-online button:hover,
+.choose-your-favorite button:hover,
+.feed-a-friend_wrapper button:hover {
+  background-color: #FFFFFF;
   color: #f9804b;
 }
 
@@ -159,8 +182,102 @@ h1 {
     right: 0;
 }
 
+.choose-your-favorite {
+  height: 1110px;
+}
+
 .choose-your-favorite ul{
     display: flex;
     flex-wrap: wrap;
     margin-top: 180px;
+}
+
+.choose-your-favorite_img-palm {
+  position: absolute;
+  left: 0;
+}
+
+.choose-your-favorite_img-strelitzia {
+  position: absolute;
+  right: 0;
+}
+
+.feed-a-friend_wrapper {
+  margin: 0 auto;
+  width: 1160px;
+  height: 835px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: #FDE9E1;
+  border-radius: 20px;
+}
+
+#feed-a-friend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1600px;
+  height: 1004px;
+  background-color: #FCCEBA;
+}
+
+.feed-a-friend_wrapper h2 {
+  font-size: 48px;
+  color: #FE9013;
+}
+
+.feed-a-friend_wrapper h3 {
+  font-size: 36px;
+}
+
+.feed-a-friend_text {
+  width: 1001px;
+}
+
+#leave-feedback {
+  height: 919px;
+}
+
+.leave-feedback_testimonials-list {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  overflow-x: scroll;
+}
+
+.leave-feedback_img-leav {
+  position: absolute;
+  right: 0;
+}
+
+footer {
+  height: 443px;
+}
+
+footer nav {
+  width: 362px;
+}
+
+.footer_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_content_left-side {
+  display: flex;
+  flex-direction: column;
+  width: 298px;
+}
+
+.footer_social-net-list {
+  color: #FFFFFF;
+}
+
+.footer_content_right-side {
+  display: flex;
+  flex-direction: column;
+  width: 367px;
 }
