@@ -186,6 +186,12 @@ h1 {
   height: 1110px;
 }
 
+.choose-your-favorite_options {
+  display: flex;
+  justify-content: space-around;
+  width: 1158px;
+}
+
 .choose-your-favorite ul{
     display: flex;
     flex-wrap: wrap;
@@ -200,6 +206,11 @@ h1 {
 .choose-your-favorite_img-strelitzia {
   position: absolute;
   right: 0;
+}
+
+.choose-your-favorite_card {
+  width: 366px;
+  height: 426px;
 }
 
 .feed-a-friend_wrapper {
